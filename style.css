@@ -1,0 +1,165 @@
+/* General setup */
+@font-face {
+  font-family: 'biorhyme_expandedregular';
+  src: url('fonts/biorhymeexpanded-regular-webfont.woff2') format('woff2'),
+       url('fonts/biorhymeexpanded-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'fira_sansbook';
+  src: url('fonts/firasans-book-webfont.woff2') format('woff2'),
+       url('fonts/firasans-book-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* Typography */
+
+h1 {
+  font-size: 3.2rem;
+  font-family: 'biorhyme_expandedregular';
+  color: white;
+}
+
+h2 {
+  font-size: 1.45rem;
+  font-family: 'biorhyme_expandedregular';
+  line-height: 1.6;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-family: 'fira_sansbook';
+}
+
+/* Body Styles */
+
+body {
+  margin: 0px;
+  font-family: 'fira_sansbook';
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1;
+  position: relative;
+  height: 100vh;
+}
+
+.logoBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 175px;
+  margin-top: 250px;
+}
+
+.logoBox img {
+  max-height: 100%;
+  height: 100%;
+  width: auto;
+}
+
+.attribution {
+  position: absolute;
+  width: 100%;
+  bottom: 5px;
+  text-align: center;
+  color: whitesmoke;
+  font-size: .75rem;
+}
+
+.right {
+  flex: 2;
+  background-color: ghostwhite;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right-top, .right-mid, .right-bottom {
+  padding: 25px 50px;
+}
+
+.right-mid {
+  background-color: white;
+  box-shadow: 0px 3px 5px lightgray;
+}
+
+a {
+  color: darkolivegreen;
+}
+
+p.attribution a {
+  color: whitesmoke;
+}
+
+
+/* Forms */
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 20px;
+  margin: 20px 0px;
+  width: 650px;
+}
+form div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  max-width: 320px;
+}
+
+button,
+input, 
+label {
+  font-family: inherit;
+  font-size: .85rem; 
+  width: 300px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: rgb(21, 74, 21);
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0px 3px 5px lightgray;
+}
+
+input {
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:focus {
+  border: 1.5px solid blue;
+  box-shadow: 3px 3px 5px lightgray;
+}
